@@ -9,7 +9,7 @@ const args = process.argv.slice(1),
 function createWindow(): BrowserWindow {
 
   const electronScreen = screen;
-  const size = electronScreen.getPrimaryDisplay().workAreaSize;
+  const size = {width: 400,height:600};
 
   // Create the browser window.
   win = new BrowserWindow({
